@@ -1,0 +1,184 @@
+<!--
+    index file
+	Mohamed Shaheen Kaipally
+	Student #: 301158774
+    Date: 13-feb-2020
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page - Shaheen Kaipally</title>
+    <link rel="icon" href="Assets/icon.png" type="image/x-icon">
+    <!-- CSS Section -->
+    <link rel="stylesheet" href="Contents/font-awesome.css" type="text/css" />
+    <link rel="stylesheet" href="Contents/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="Contents/app.css" type="text/css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar-fixed-top" data-offset="50">
+
+    <!--Navigation-->
+    <nav class="navbar navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navigation-bar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#home" class="navbar-brand"><img src="Assets/logo.png" alt="Personal Logo" class="img-responsive"></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navigation-bar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"> <a href="#home"><i class="fa fa-home fa-lg"></i> HOME</a></li>
+                    <li> <a href="#aboutMe"><i class="fa fa-info-circle fa-lg"></i> ABOUT</a> </li>
+                    <li class="dropdown">
+                        <a href="#projects" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="fa fa-folder fa-lg"></i> PROJECTS
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Page 1-1</a></li>
+                            <li><a href="#">Page 1-2</a></li>
+                            <li><a href="#">Page 1-3</a></li>
+                        </ul>
+                    </li>
+                    <li> <a href="#contactMe"><i class="fa fa-envelope fa-lg"></i> CONTACT</a> </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Header-->
+    <!--Used inline style here because other pages won't have full screen header, dont want to mess up shared css page-->
+    <header id="home" style="
+    background-image:url('Assets/bg.png');
+    background-size: cover;
+    height:100vh;
+    ">
+        <div class="headerMask jumbotron" style="
+        height:100vh;
+        background-color:rgba(25, 210, 25, 0);    
+        ">
+            <span class="headerText text-center" style="
+            position:absolute;
+            width:100vw;
+            top:40vh;
+            ">
+                <h1>Mohamed Shaheen Kaipally</h1>
+                <h3>"Dreams are extremely important. You can't do it unless you imagine it." -George Miller</h3>
+                <a href="#aboutMe"><button class="btn home-btn">About Me</button></a><br>
+                <a href="#contactMe"><button class="btn home-btn">Contact Me</button></a><br>
+                <a href="#projects"><button class="btn home-btn">Projects</button></a><br>
+            </span>
+        </div>
+    </header>
+
+    <!--About Me-->
+    <div class="container-fluid section" id="aboutMe">
+        <br><br><br><br><br>
+        <h2 class="section-header">ABOUT ME <i class="fa fa-info-circle"></i></h2>
+        <hr>
+        <br><br>
+        <div class="row">
+            <div class="col-sm-offset-1 col-sm-3">
+                <img src="Assets/profilepicture.jpg" alt="Picture of Me" class="profilepicture img-responsive">
+            </div>
+            <div class="col-sm-7">
+                <p class="description" id="about">
+                    I am a bachelor in Computer Engineering and I am currently studying Game Programming in Centennial College.
+                    I am very passionate about learning the evergrowing world of technology.
+                </p>
+            </div>
+            <div class="hobbies col-sm-3">
+                <h4 class="sectionSubHead">Softwares/Langues I work with:</h4>
+                <ul>
+                    <li class="hobbyItem">Unity</li>
+                    <li class="hobbyItem">Python</li>
+                    <li class="hobbyItem">C#</li>
+                    <li class="hobbyItem">PHP</li>
+                    <li class="hobbyItem">Java</li>
+                    <li class="hobbyItem">Adobe Photoshop</li>
+                    <li class="hobbyItem">CSS, HTML</li>
+                </ul>
+                <a href="https://drive.google.com/file/d/1vSNx-0jZZsGyZMerUYI7udmka9AO6gf_/view?usp=sharing">Download CV</a>
+       
+        </div>
+    </div>
+
+    <!--Projects-->
+    <div class="container-fluid section" id="projects">
+        <br><br><br><br><br>
+        <h2 class="section-header">Projects <i class="fa fa-folder-open-o"></i></h2>
+        <hr>
+        <p class="text-center">
+            Development of an App – “Guru-Student App”
+            <br>Guru-Student app is an android base application which is an interactive model between 
+            teachers and enthusiastic students where the “GURU” will share study materials to the student via 
+            post supported in all media format be it audio, video or documents. 
+            As it is an interactive model it will allow posting queries and solutions by the users. 
+            The data will be stored in Firebase.
+        </p>
+    </div>
+
+    <!--Contact Me-->
+    <div class="container-fluid section" id="contactMe">
+        <br><br><br><br><br>
+        <h2 class="section-header">CONTACT ME <i class="fa fa-envelope-o"></i></h2>
+        <hr>
+        <p class="text-center col-sm-12">
+            Feel free to email me at <a href="mailto:mkaipall@my.centennialcollege.ca"
+                style="text-decoration:underline;">mkaipall@my.centennialcollege.ca</a> or send me a message below!
+        </p>
+        <br><br>
+        <form class="form-horizontal" role="form">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="name">Name:</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="name" placeholder="Enter name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="email">Email:</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="email" placeholder="Enter email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="subject">Subject:</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="subject" placeholder="Enter subject">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="message">Message:</label>
+                <div class="col-sm-8">
+                    <textarea id="message" rows="5" class="form-control" placeholder="Enter message"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-12 text-center">
+                    <button type="submit" class="btn btn-primary">Send Message <i class="fa fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!--Footer-->
+    <footer class="container-fluid">
+        <div class="footer-text col-sm-12">
+            &nbsp;Mohamed Shaheen Kaipally | Student #: 301158774<br>
+        </div>
+    </footer>
+
+    <!-- JavaScript Section -->
+    <script src="Scripts/jquery-2.2.4.min.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/app.js"></script>
+</body>
+
+</html>

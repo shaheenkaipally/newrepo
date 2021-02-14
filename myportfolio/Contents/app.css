@@ -1,0 +1,104 @@
+/*
+    css file
+	Mohamed Shaheen Kaipally
+	Student #: 301158774
+    Date: 13-feb-2020
+*/
+
+/* ----------------------------------Navbar CSS---------------------------------- */
+nav{
+    background-color: #000000;
+}
+/*For navbar anchors*/
+
+.navbar-brand{
+    padding: 2px 25px;
+}
+.navbar-collapse{
+    background-color:#000000;
+}
+/*The toggle button*/
+.navbar-toggle{
+    background-color: #ffffff;
+}
+.navbar-toggle .icon-bar{
+    border: 1px solid rgb(255, 255, 255);
+}
+.navbar-fixed-top .active a { 
+      color:#000;
+      background: #fff;
+}
+
+/* ----------------------------------Jumbotron (Use in Header) CSS---------------------------------- */
+.jumbotron{
+        background-color:#492727;        
+}
+.jumbotron h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: #818181;
+    font-size: 9.5vmin;
+}
+.jumbotron h3{
+    font-size: 3.0vmin;
+    color: #95cfff;
+}
+.jumbotron button{
+    border:none;
+    border-radius: 25px;
+    width: 50%;
+    line-height: 250%;
+    margin-top: 1%;
+    color: #b64747;
+    font-size: 2.5vmin;
+}
+.jumbotron button:hover{
+    background-color: #e79191;
+    color: #fff;
+}
+
+/* ----------------------------------Body CSS---------------------------------- */
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #727272;
+    background: white; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#2196F3, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#2196F3, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#2196F3, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#2196F3, white); /* Standard syntax */
+    background: linear-gradient(rgba(33,150,243,0.7), white); /* Standard syntax */
+}
+hr{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #B6B6B6, rgba(0, 0, 0, 0));
+}
+
+/* ----------------------------------Footer CSS---------------------------------- */
+footer{
+    background-color: black;
+    height: 150px;
+    height: 20vh;
+    color: lightgray;    
+}
+footer span a{
+    color:lightgray;
+}
+.footer-text{
+    text-align: center;
+    position: relative;
+    top: 5vh;
+    /*font-size: 1.75vmin;*/
+}
+
+/* ----------------------------------Section Classes CSS---------------------------------- */
+.section-header{
+    text-align: center;
+    color: #212121;
+}
+.section-sub-head{
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    color: #212121;
+}
+.section{
+        margin-bottom: 10%;
+}
